@@ -1,5 +1,6 @@
 function X = jacobi(coeff1,coeff2,coeff3,result)
 %%jacobi method
+fprintf('\nthis is jacobian method\n')
 X =[0,0,0];
 for i=1:3
     fprintf('enter initial value of X%d :',i)

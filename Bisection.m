@@ -1,5 +1,6 @@
 function x = Bisection
 % BiSection method
+fprintf('\nthis is Bisectional method and it uses this example : \nf(x)=x^2+ln(x)\n')
 a = input ('enter interval start : ');
 b = input ('enter interval end : ');
 iter = input ('enter number of iterations : ');

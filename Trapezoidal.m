@@ -1,5 +1,6 @@
 function result = Trapezoidal
 %Trapezoidal Rule
+fprintf('\nthis is Trapezoidal method and it uses this example : \nf(x)=x*e^(-x)\n')
 a = input ('enter interval start : ');% start from a to b
 b = input ('enter interval end : ');
 n = input ('enter number of segments : ');
@@ -10,10 +11,10 @@ result=0;
 for i=0:n
     %equation example
     %f(x)=x*e^(-x)
-    temp=(h/2)*( (i*h)*exp(- (i*h) ) )
+    temp=(h/2)*( (i*h)*exp(- (i*h) ) );
 
     if mod(i,n)~=0
-      temp=2*temp
+      temp=2*temp;
     end
     result=result+temp;
 end

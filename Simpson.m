@@ -1,5 +1,6 @@
 function result = Simpson
 %Simpson's 1/3
+fprintf('\nthis is Simpson 1/3 Rule and it uses this example : \nf(x)=x*e^(-x)\n')
 a = input ('enter interval start : ');% start from a to b
 b = input ('enter interval end : ');
 n = input ('enter number of segments : ');
@@ -22,10 +23,7 @@ for i=0:n
               temp=2*temp;
         end
     end
-    
     result=result+temp;
 end
-
-
 end
 
